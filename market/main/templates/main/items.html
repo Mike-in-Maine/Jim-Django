@@ -23,11 +23,10 @@
               <td>{{ item.price }}</td>
               <td>
               <button type="button" class="btn btn-primary"
-                data-bs-toggle=collapse data-target="#collapseExample{{ item.pk }}">
+                      data-bs-toggle="collapseExample{{ item.pk }}" href="#collapseExample{{ item.pk }}" role="button" aria-expanded="false" aria-controls="collapseExample">
                 More Info
               </button>
-              <button type="button" class="btn btn-primary"
-                data-bs-toggle="collapse" data-target="#collapseExample">
+              <button type="button" class="btn btn-primary" data-bs-toggle="collapseExample{{ item.pk }}" data-bs-target="#collapseExample{{ item.pk }}" aria-expanded="false" aria-controls="collapseExample">
                 Purchase this Item
               </button>
               </td>
