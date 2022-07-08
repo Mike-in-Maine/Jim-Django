@@ -11,4 +11,15 @@ class Item(models.Model):
     def __str__(self):
         return self.name
 
+class Orders(models.Model):
+    ABEPOID = models.CharField(max_length=255)
+    ISBN = models.CharField(max_length=24)
+    condition = models.CharField(max_length=24)
+    TITLE = models.CharField(max_length=1024)
+
+
+    #this is to change the name of an item in admin dashboard
+    def __str__(self):
+        return self.ABEPOID
+
 

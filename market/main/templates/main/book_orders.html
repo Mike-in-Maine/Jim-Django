@@ -4,7 +4,7 @@
     <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Name</th>
+            <th scope="col">ABEPOID</th>
             <th scope="col">Image</th>
             <th scope="col">Price</th>
             <th scope="col">Options</th>
@@ -14,10 +14,10 @@
     {% for item in items %}
         {% include 'main/includes/items_collapse.html' %}
             <tr>
-                <th scope="row">{{ item.pk }}</th>
-                    <td>{{ item.name }}</td>
+                <th scope="row">{{ order.pk }}</th>
+                    <td>{{ Orders.ABEPOID }}</td>
                     <td>
-                      <a href="{{ item.img_url }}" ><img alt = "image" style="width:64px" src="{{ item.img_url }}"></a>
+                      <a href="{{ order.ABEPOID }}" ><img alt = "image" style="width:64px" src="{{ item.img_url }}"></a>
                     </td>
 
               <td>{{ item.price }}</td>
